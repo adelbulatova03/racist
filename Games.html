@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Racer Astana</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+
+<body>
+
+
+<div class='loading'>
+  <div class="loader">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</div>
+
+
+
+<header>
+  <!-- Navigation -->
+<nav id="mainheader" class="navbar navbar-expand-lg static-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Racer Astana" title="Racer Astana" height="36">
+    </a>
+    <div class="mainlogo">
+      <a id="newAlogo" href="index.html">Racer Astana</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span id="navbarICONhamburger" class="navbar-toggler-icon">&#9776</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="registration.html">Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul id="mainUL" class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="Support.html">Support</a></li>
+            <li>
+              <hr id="dividerHR" class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" title="Click on icon" id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">Change theme<img src="images/moon.png" id="icon" class="toggle-theme" alt="Change mode"></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<nav aria-label="breadcrumb" style="margin-left: 50px;">
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page"><a href="Games.html">Games</a> </li>
+  </ul>
+</nav>
+
+
+<center><div class="container-lg" id="imageslider">
+<!--image slider-->
+<section class="home" id="home">
+  <div class="slider">
+    <div class="slide active" style="background-image: url('images/11.jpg');">
+    </div>
+    <div class="slide" style="background-image: url('images/8.jpg');">
+    </div>
+    <div class="slide" style="background-image: url('images/4.jpg');">
+    </div>
+    <div class="slide" style="background-image: url('images/7.jpg');">
+    </div>
+    <div class="slide" style="background-image: url('images/12.jpg');">
+    </div>
+  </div>
+  <div class="controls">
+    <div class="prev"><</div>
+    <div class="next">></div>
+  </div>
+</div>
+</section>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+<h4 id="toph4">Games</h4>
+<hr id="tophr">
+<!--start of changes-->
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <div class="overlay">
+          <div class="text">Watch the trailer</div>
+        </div>
+        <img src="images/capsule_616x353.jpg" alt="Forza Horizon 5" class="card-img-top" data-video="https://www.youtube.com/embed/FYH9n37B7Yw">
+        
+        <div class="card-body">
+          <div class="border border-danger">
+            <h5 class="card-title">Forza Horizon 5</h5>
+          </div>
+        </div>
+
+        <div class="video-container" id="videoContainer1"></div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card" >
+        <div class="overlay">
+          <div class="text">Watch the trailer</div>
+        </div>
+        <img src="images/capsule_616x353 (1).jpg" alt="Forza Horizon 4" class="card-img-top" data-video="https://www.youtube.com/embed/5xy4n73WOMM">
+
+        <div class="card-body">
+          <div class="border border-danger">
+            <h5 class="card-title">Forza Horizon 4</h5>
+          </div>
+        </div>
+
+        <div class="video-container" id="videoContainer2"></div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card" >
+        <div class="overlay">
+          <div class="text">Watch the trailer</div>
+        </div>
+        <img src="images/capsule_616x353 (2).jpg" alt="Need for Speed Most Wanted" class="card-img-top" data-video="https://www.youtube.com/embed/K-5EdHZ0hBs">
+
+        <div class="card-body">
+          <div class="border border-danger">
+            <h5 class="card-title">Need for Speed Most Wanted</h5>
+          </div>
+        </div>
+
+        <div class="video-container" id="videoContainer3"></div>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <div class="overlay">
+          <div class="text">Watch the trailer</div>
+        </div>
+        <img src="images\need-for-speed-underground.jpg" alt="Need for Speed Underground" class="card-img-top" data-video="https://www.youtube.com/embed/R3QvniaZ5qM">
+  
+        <div class="card-body">
+          <div class="border border-danger">
+            <h5 class="card-title">Need for Speed Underground</h5>
+          </div>
+        </div>
+  
+        <div class="video-container" id="videoContainer4"></div>
+      </div>
+    </div>
+  
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <div class="overlay">
+          <div class="text">Watch the trailer</div>
+        </div>
+        <img src="images/capsule_616x353 (3).jpg" alt="Need for Speed Heat" class="card-img-top" data-video="https://www.youtube.com/embed/9ewiJJe_nYI">
+  
+        <div class="card-body">
+          <div class="border border-danger">
+            <h5 class="card-title">Need for Speed Heat</h5>
+          </div>
+        </div>
+  
+        <div class="video-container" id="videoContainer5"></div>
+      </div>
+    </div>
+  
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <div class="overlay">
+          <div class="text">Watch the trailer</div>
+        </div>
+        <img src="images/capsule_616x353 (4).jpg" alt="Assetto Corsa" class="card-img-top" data-video="https://www.youtube.com/embed/TDFN-E30jhU">
+  
+        <div class="card-body">
+          <div class="border border-danger">
+            <h5 class="card-title">Assetto Corsa</h5>
+          </div>
+        </div>
+  
+        <div class="video-container" id="videoContainer6"></div>
+      </div>
+    </div>
+  </div>
+
+</div><br><br><br>
+
+
+<h1 id="heading" class="fading-heading">Info</h1><br>
+
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Forza Horizon 5')">Forza Horizon 5</button>
+  <button class="tablinks" onclick="openCity(event, 'Forza Horizon 4')">Forza Horizon 4</button>
+  <button class="tablinks" onclick="openCity(event, 'Need for Speed Most Wanted')">Need for Speed Most Wanted</button>
+  <button class="tablinks" onclick="openCity(event, 'Need for Speed Underground')">Need for Speed Underground</button>
+  <button class="tablinks" onclick="openCity(event, 'Need for Speed Heat')">Need for Speed Heat</button>
+  <button class="tablinks" onclick="openCity(event, 'Assetto Corsa')">Assetto Corsa</button>
+</div>
+
+<!-- Tab content -->
+<div id="Forza Horizon 5" class="tabcontent">
+  <h3>Forza Horizon 5</h3>
+  <p>As Forza Horizon 5 crosses the finish line, the bar for open-world racing has again been raised in so many different ways. A map of Mexico that’s bigger, higher, and wildly more varied than any Horizon game yet. A fresh change to the way the Horizon Festival itself is gradually constructed, which results in more one-off events deliberately designed to showcase Horizon 5 at its very best. Improved tools that allow us to build completely custom events that can be more or less indistinguishable from those crafted by the developers themselves.</p>
+</div>
+
+<div id="Forza Horizon 4" class="tabcontent">
+  <h3>Forza Horizon 4</h3>
+  <p>Forza Horizon 4 retains almost everything that made Forza Horizon 3 the best racer in its class and bakes it into a game that doesn’t ever want you to stop playing. The stunning visual quality and sound design, the massive array of automobiles, and the extensive and completely customisable career mode that have become hallmarks of the Horizon series are all here. What’s new is just how much more effectively Forza Horizon 4 encourages us to return thanks to its shifting seasons, regularly refreshed challenges, and steady stream of rewards.</p>
+</div>
+
+<div id="Need for Speed Most Wanted" class="tabcontent">
+  <h3>Need for Speed Most Wanted</h3>
+  <p>Two years ago acclaimed British developer Criterion took a stab at one of Need for Speed’s most established imprints: Hot Pursuit. The results were fantastic; it was a game that pushed the arcade racer forward in new, exciting directions, providing unprecedented levels of connectivity, and was a major shot in the arm for the series.
+    Thankfully, following on from the disappointment of last year’s entry The Run, Criterion is back in the driving seat, turning its perfectionist’s gaze towards another title from the franchise’s past. This time it’s Most Wanted receiving the makeover and the results occasionally approach the sublime.</p>
+</div>
+
+<div id="Need for Speed Underground" class="tabcontent">
+  <h3>Need for Speed Underground</h3>
+  <p>Only a year gone and Electronic Arts is already burning rubber with another Need for Speed title. Last year the publisher released Need for Speed: Hot Pursuit 2, a fantastic racer on the PlayStation 2, but one not quite as polished on other platforms. Since developer Black Box was responsible for the slick PS2 iteration, EA recruited them to develop the next in the franchise.
+
+    Aptly titled Need for Speed Underground, it focuses on the custom kit and import car circuit. It is most commonly, and certainly not unfairly, compared to the theme featured in the popular The Fast and the Furious movies. So, it is a definite departure from the world of exotic cars and over-the-top police chases that the series was founded on. It broadens the NFS franchise, bringing a number of things to the starting line that other arcade racers have not. </p>
+</div>
+
+<div id="Need for Speed Heat" class="tabcontent">
+  <h3>Need for Speed Heat</h3>
+  <p>Still burned by 2017’s Need for Speed Payback, I wasn’t sure Need for Speed Heat was going to be the salve the series needed – but this open-world street racer has some surprising pep to it. Heat is a marked return to form, owing its success to ingredients plucked from a few of the franchise’s most fondly-remembered games. It took more attempts than would’ve been ideal, but developer Ghost has finally built a racer that feels fittingly faithful to the roots of Need for Speed. Heat is hardly revolutionary, but it is fast, fun, and streets ahead of 2017’s properly disappointing Need for Speed Payback.</p>
+</div>
+
+<div id="Assetto Corsa" class="tabcontent">
+  <h3>Assetto Corsa</h3>
+  <p>With Assetto Corsa, Italian developer Kunos Simulazioni created an impressive racing simulation. The game was rather successful on PC, partially thanks to it’s extensive modability, and now console player can also get their hands on the racing experience that Assetto Corsa has to offer.
+
+    Little power under the hood
+    Lauded for its realism, the games shines in terms of car physics and sound. It really offers a genuine driving experience, where every cars feels different and the driving experience feels realistic. I can imagine that playing this game with a steering wheel must be truly amazing.
+    
+    Sadly, the rest of the game can’t really match this aspect. On PC, this game was launched using the Early Access-program, but the console version doesn’t seem to be much of a step-up thanks to it’s various flaws and problems.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="newfooter"
+          class="text-center text-lg-start text-black"
+          style="background-color: #d94028"
+          >
+    <!-- Grid container -->
+    <div class="container p-3 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" id="column">
+            <h6 class="mb-4 font-weight-bold">
+              Company
+              <hr id="hrindaf"></hr>
+            </h6>
+            <p><a href="Aboutus.html">About us</a></p>
+            <p><a href="Privacypolicy.html">Privacy and policy</a></p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="mb-4 font-weight-bold">Help<hr id="hrindaf"></hr></h6>
+
+
+           
+            <p><a href="FAQ.html" title="Frequently Asked Questions">FAQ</a></p>
+            <p><a href="Contactus.html">Contacts</a></p>
+            
+
+
+          </div>
+          <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none" />
+            <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="mb-4 font-weight-bold">Follow us<hr id="hrindaf"></hr></h6>
+
+            <div class="socials">
+      <a href="https://www.youtube.com/channel/UCe9C_NvxUgFdbWt8FerqEMg" title="youtube"><i class="fab fa-youtube"></i></a>
+      <a href="https://vk.com/abatovmadiyar" title="vkontakte"><i class="fab fa-vk"></i></a>
+      <a href="https://www.instagram.com/madeekon/" title="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/madikonquiz" title="telegram"><i class="fab fa-telegram"></i></a>
+      </div>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+   <!-- <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2); color: #242223;"
+         >
+      © 2020 Copyright:
+      <a href="https://mdbootstrap.com/" style="text-decoration: none; color: #242223;"
+         >MDBootstrap.com</a
+        >
+    </div>-->
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+  let loadWrapper = document.querySelector('.loading'); //the "let loadWrapper" will show div with class "loading"
+  
+
+  window.addEventListener('load', function(){
+    //loadWrapper.style.display = 'none';
+    loadWrapper.parentElement.removeChild(loadWrapper); //the "let loadWrapper" will remove after all content downloaded
+  });
+
+</script>
+
+
+
+<script> /*JS code for "change mode"*/
+        function theme() {
+      const toggleTheme = document.querySelector('.toggle-theme')
+      let el = document.documentElement
+
+      toggleTheme.addEventListener('click', () => {
+        if(el.hasAttribute('data-theme')) {
+          el.removeAttribute('data-theme') //remove attribute if dark mode is not selected
+          localStorage.removeItem('theme') //remove item from localStorage if dark mode is not selected
+          icon.src = "images/moon.png"; // change icon
+        } else {
+        el.setAttribute('data-theme', 'dark') //add new attribute if dark mode is selected
+        localStorage.setItem('theme', 'dark') //add item from localStorage if dark mode is selected
+        icon.src = "images/sun.png"; // change icon
+          }
+      })
+
+      if(localStorage.getItem('theme') !== null){
+         el.setAttribute('data-theme', 'dark')
+         icon.src = "images/sun.png";
+      } // check local storage after refreshing the site and set selected mode
+    }
+    theme()
+</script>
+
+
+
+<script> /*JS code for slide*/
+  const slides=document.querySelector(".slider").children;
+  const prev=document.querySelector(".prev");
+  const next=document.querySelector(".next");
+  let index=0;
+
+  //change to previous slide
+  prev.addEventListener("click", function(){
+    prevSlide();
+    resetTimer(); // reset slide time after click
+  })
+  //change to next slide
+  next.addEventListener("click", function(){
+    nextSlide();
+    resetTimer(); // reset slide time after click
+  })
+
+  function indicateSlide(element){
+    index=element.id;
+    changeSlide();
+    resetTimer();
+  }
+
+  function prevSlide(){
+    if(index==0){
+      index=slides.length-1;
+    }
+    else{
+      index--;
+    }
+    changeSlide(); //this button will change slides to left
+  }
+
+  function nextSlide(){
+    if(index==slides.length-1){
+      index=0;
+    }
+    else{
+      index++;
+    }
+
+    changeSlide(); //this button will change slides to right
+  }
+  function changeSlide(){
+    for(let i=0; i<slides.length; i++){
+      slides[i].classList.remove("active");
+    }
+    slides[index].classList.add("active"); //only 1 radio button can be active
+  }
+
+  function resetTimer(){
+    clearInterval(timer);
+    timer=setInterval(autoPlay,4000);
+  }
+
+  function autoPlay(){
+    nextSlide();
+  }
+  let timer=setInterval(autoPlay,4000); //slides will change automatically with radio buttons
+</script>
+
+
+<script>
+  var cards = document.querySelectorAll(".card");
+
+cards.forEach(function(card) {
+  var container = card.querySelector(".card-body");
+  var overlay = card.querySelector(".overlay"); 
+  var videoContainer = card.querySelector(".video-container");
+  var videoURL = card.querySelector(".card-img-top").dataset.video; 
+  var iframe = null;
+
+  overlay.addEventListener("click", function() { 
+    if (!iframe) {
+      iframe = document.createElement("iframe");
+      iframe.src = videoURL;
+      iframe.setAttribute("width", "414");
+      iframe.setAttribute("height", "290");
+      iframe.setAttribute("controls", "true");
+
+      videoContainer.innerHTML = "";
+      videoContainer.appendChild(iframe);
+
+      var closeButton = document.createElement("span");
+      closeButton.innerHTML = "✕";
+      closeButton.className = "close-button";
+      videoContainer.appendChild(closeButton);
+
+      closeButton.addEventListener("click", function() {
+        videoContainer.innerHTML = "";
+        iframe = null;
+        container.style.display = "block";
+      });
+
+      container.style.display = "none";
+    } else {
+      videoContainer.innerHTML = "";
+      iframe = null;
+      container.style.display = "block";
+    }
+  });
+});
+
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+$(document).ready(function() {
+      setTimeout(function() {
+        $("#heading").css("opacity", "0");
+      }, 2000);
+    });
+
+</script>
+
+
+<!--Java Script for "up" button-->
+<button onclick="topFunction()" id="myBtn" title="Наверх">&#8593</button>
+    <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+
+  function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script> <!--end of JS-->
+
+
+<script>
+$(document).ready(function() {
+      $("#heading").hover(function() {
+        $(this).css("opacity", "0");
+      }, function() {
+        $(this).css("opacity", "1");
+      });
+    });
+</script>
+
+
+
+</body>
+</html>
